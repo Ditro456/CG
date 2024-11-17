@@ -104,6 +104,7 @@ void Display() {
     glLoadIdentity();
 
     gluLookAt(0.0, 0.5, 0.0, 0.3, -0.3, -1.0, 0.0, 1.0, 0.0);
+
     PilotView(0.0, ViewY, ViewX);
     glPushMatrix();
     glTranslatef(0.4, 0.0, -0.4);
@@ -135,19 +136,43 @@ void Display() {
     glutSolidCube(0.1);
     glPopMatrix();
     glPushMatrix();
-    glTranslatef(0.0, 0.35, 0.0);
-    glutSolidTorus(0.01, 0.08, 8, 30);
+    glTranslatef(0.0, 0.5, 0.0);
+    glutSolidTorus(0.02, 0.16, 8, 30);
     glPopMatrix();
     glPushMatrix();
-    glTranslatef(0.0, 0.35, 0.0);
+    glTranslatef(0.0, 0.5, 0.0);
     glRotatef(rotate1, 0.0, rotate1, rotate1);
-    glutWireSphere(0.07, 10, 30);
+    glutWireSphere(0.14, 10, 30);
     glPopMatrix();
     glPushMatrix();
     glTranslatef(0.0, 0.25, 0.0);
     glScalef(1.0, 0.34, 1.0);
     glColor3f(1.0, 1.0, 1.0);
     glutSolidCube(0.1);
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(0.35, 0.35, 0.5);
+    glColor3f(1.0, 1.0, 1.0);
+    glScalef(0.15, 0.15, 0.15);
+    glutSolidTetrahedron();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(-0.35, 0.35, 0.5);
+    glColor3f(0.1, 0.4, 0.80);
+    glScalef(0.15, 0.15, 0.15);
+    glutSolidIcosahedron();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(-0.35, 0.35, -0.5);
+    glColor3f(0.35, 0.15, 0.60);
+    glScalef(0.15, 0.15, 0.15);
+    glutSolidOctahedron();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(0.35, 0.35, -0.5);
+    glColor3f(0.4, 0.1, 0.4);
+    glScalef(0.05, 0.05, 0.05);
+    glutSolidDodecahedron();
     glPopMatrix();
     glFlush();
 }
