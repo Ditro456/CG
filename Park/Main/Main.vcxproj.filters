@@ -21,18 +21,8 @@
     <ClCompile Include="..\GraphicPro\Test.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\OneDrive\문서\GitHub\CG\Park\Main\Proj.cpp">
+    <ClCompile Include="FileName.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="stb_image.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\..\..\OneDrive\바탕 화면\clock.png">
-      <Filter>리소스 파일</Filter>
-    </Image>
   </ItemGroup>
 </Project>
