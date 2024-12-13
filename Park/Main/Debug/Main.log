@@ -1,0 +1,2 @@
+﻿  Proj.cpp
+C:\Users\hoya6\source\repos\Main\Proj.cpp(1,10): error C1083: 포함 파일을 열 수 없습니다. 'GL/glut.h': No such file or directory
